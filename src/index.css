@@ -1,0 +1,112 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {text-decoration: none; padding: 0; margin: 0; font-size: 20px; font-family: 'Akshar';}
+body {height: 0; width: 0; overflow-x: hidden;}
+.container {overflow-y: scroll; overflow-x: hidden; width: 100vw; height: 800vh;}
+
+.section {position: fixed; top: 0; left: 100vw; width: 100vw; height: 100vh; z-index: 2; background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.75), rgba(255,255,255,0.4)); z-index: 1; transition: all 1s ease; opacity: 0; display: flex; flex-direction: row; overflow-y: hidden;}
+
+section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflow-x: hidden; display: flex; scroll-snap-align: start;}
+#home-section {background-color: none; z-index: 1; scroll-snap-align: start; width: 100vw; height: 100vh;}
+
+#nav-bar {height: 70px; width: 99vw; position: fixed; top: 0; left: 0; display: flex; justify-content: space-between; z-index: 10; overflow: hidden;}
+.nav {display: flex; width: 660px; padding: 0px 0px; cursor: pointer; color: #727070; font-family: 'Akshar'; position: relative; right: 10px;}
+.menu, #logo {display: flex; align-items: center;padding: 0 50px; transition: all 0.5s ease 0s; font-size: 18px;}
+#home:hover, #about:hover, #works:hover, #contact:hover {color: white !important;}
+#logo {color: #555555; font-family: 'Akshar'; font-size: 20px; cursor: pointer; padding: 0; margin: 0; width: 400px;} 
+#logo:hover {color: #f8c37d;}
+
+#canvas1 {position: fixed; height: 100vh; width: 99vw; z-index: 0; overflow-x: hidden; overflow-y: hidden; background-image: url('../public/backgroundColor1.jpg'); background-size: 100%;}
+
+#photo {width: 46px; height: 46px; border-radius: 25px; background-image: url('../public/photo.png'); background-size: 100%; margin: 12px 15px 12px 40px; padding: 0;}
+#name-section {position: fixed; top: 0; left: 0; width: 530px; height: 100vh; z-index: 2; background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.85), rgba(255,255,255,0.5)); z-index: 1; transition: all 1s ease}
+#name {display: flex; width: 100px; position: relative; align-items: center ;justify-content: left; width: 200px; font-size: 20px; z-index: 4;}
+#greeting {position: relative; left: 40px; font-size: 25px; font-weight: bold; font-family: 'Akshar'; color: #252842; z-index: 4;}
+#big-name {top: 1vh; height: 50vh; left: 0; display: flex; flex-direction: column-reverse; }
+#big-name-text {position: relative; bottom: 0px; left: 40px;font-family: 'Akshar'; font-weight: bold; color: #252842; font-size: 65px; width: 60vw;}
+
+#description {position: relative; top: 0; height: 50vh; width: 500px; background-color: none;}
+#div-job {font-weight: bold; font-family: 'Akshar'; position: relative; left: 40px; height: 40px;}
+#span-job1 {position: absolute; top: 15px; opacity: 1; font-size: 25px; height: 40px; color: #252842; animation: sjAnimation1 12s linear forwards infinite;} 
+#span-job2 {position: absolute; top: 15px; opacity: 0; font-size: 25px; height: 40px; color: #252842; height: 100%; transform: translateY(-50px); animation: sjAnimation2 12s linear forwards infinite;}
+@keyframes animation1 { 100% {transform: translateY(-370px) translateX(299px) rotate(302.4deg);}}
+@keyframes sjAnimation1 { 3% {opacity: 0; transform: translateY(50px)} 25% {opacity: 0; transform: translateY(-50px)} 28% {opacity: 1; transform: translateY(0px)} 50% {opacity: 1; transform: translateY(0px)} 53% {opacity: 0; transform: translateY(50px)} 75% {opacity: 0; transform: translateY(-50px)} 78% {opacity: 1; transform: translateY(0px)}}  
+@keyframes sjAnimation2 { 3% {opacity: 1; transform: translateY(0px)} 25% {opacity: 1; transform: translateY(0px)} 28% {opacity: 0; transform: translateY(50px)} 50% {opacity:0; transform: translateY(-50px)} 53% {opacity: 1; transform: translateY(0px)} 75% {opacity: 1; transform: translateY(0px)} 78% {opacity: 0; transform: translateY(50px)}}  
+
+.media {position: relative; height: 100%; width: 35px; background-color: none; z-index: 10; cursor: pointer; transition: all 0.4s ease; border-style: solid; border-width: 1px; border-color: white; border-color: #505896; border-width: 2px;} 
+.media:hover { background-color:none; border-color: #f8c37d;}
+.insta {background-image: url('../public/insta-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .insta:hover {background-image: url('../public/insta-transparent-f8c37d.png');}
+.github {background-image: url('../public/github-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .youtube:hover {background-image: url('../public/youtube-transparent-f8c37d.png');}
+.youtube {background-image: url('../public/youtube-transparent-505896.png'); background-size: 105%; background-repeat: no-repeat; background-position: center center;} .github:hover {background-image: url('../public/github-transparent-f8c37d.png');}
+#social-media {position: absolute; left: 40px; bottom: 40px; width: 150px; height: 35px; display: flex; justify-content: space-between;}
+
+.left {height: 100vh; width: 40vw; min-width: 400px; overflow: hidden; display: flex;flex-direction: column; justify-content: center;}
+#about-greeting, .greeting{display: flex; flex-direction: column-reverse; height: 40vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold;}
+#about-me, .greeting2{height: 60vh; width: 90%; margin:10px 0 0 40px; font-size: 23px; color: #252842; overflow: hidden; margin-left: 40px;}
+
+.right {right: 0; width: 60vw; min-width: max(56vh, 543px); overflow: hidden; height: 100vh; display: flex; flex-direction: row-reverse;}
+#canvas-field {left: 0; height: 100vh; min-width: max(56vh, 543px); background-color: rgba(0, 255, 0, 0.2); overflow: hidden;}
+
+#upper-textfield {position: relative; left: 0; font-weight: bold; height: 45vh; width: 54vw; min-width: max(56vh, 543px); display: flex; flex-direction: row; align-items: flex-end;justify-content: space-around; margin-right: min(3vw, 15px);}
+.skill-text {width: 18vw; min-width: 165px; display: flex; flex-direction: column ; align-items: center; font-size: 20px; color:#636892;}
+#lower-textfield {position: relative; left: 0; font-weight: bold; height: 40vh; width: 54vw; min-width: max(56vh, 543px); display: flex; flex-direction: row; align-items: flex-end;justify-content: space-around;margin-right: min(3vw, 15px);}
+.skill-canvas {height: 27vh; width: 17vw; background-color: none; margin: 0 0.5vw; display: flex; justify-content: center; align-items: center;}
+.image {height: 15vh; width: 15vh}
+
+#work-field {height: 100vh; width: 60vw;display:flex;flex-direction: row; justify-content:flex-end; min-width: max(56vh, 543px);}
+#work-card {left: 0; height: 100vh; width: 92%; min-width: max(56vh, 543px); background-color: rgba(0, 162, 255, 0.2); display: flex; flex-direction: row; justify-content:center;}
+#work-left-subfield {height: 100vh; width: 50%;}
+#display {background-color: white; width: 37.04vh; }
+.box {height: 76vh; max-width: min(25vw, 37vh); max-height: min(76vh, 50vw); display: flex; align-items: center; justify-content: center; margin: 0 20px;}
+#box {display: flex; width: 150px; flex-direction: column; justify-content: flex-start; align-items:  flex-start; margin: 0;}
+#work-right-subfield {height: 100vh; width: 50%; display: flex; align-items: center; justify-content: space-between; padding: 0; min-width: 294px;}
+#updown-button {height: 140px; width: 150px; display: flex; flex-direction: column; justify-content: space-between;}
+.updown {height: 60px; width: 60px; border-radius: 30px; opacity: 0.5; transition: all 0.5s ease;}
+.updown:hover {opacity: 1; cursor: pointer;}
+#up {background-image: url('../public/upButton.png'); background-size: 100%;}
+#down {background-image: url('../public/downButton.png'); background-size: 100%;}
+.app {color: #252842;}
+.app-name {font-size: 25px; font-weight: bold; margin-bottom: 20px;}
+.app-description {font-size: 20px;width: 20vw;}
+.app-rate{background-image: url('../public/5Stars.png'); width: 300px; height: 47px; background-size: 50%; background-repeat: no-repeat;}
+.app-link {margin-top: 30px; width: 170px; height: 50px; background-color: rgba(88, 206, 77, 0.5); color: #252842; cursor: pointer; transition: all 0.5s ease;} 
+.app-link:hover {color: white; background-color: rgb(134, 218, 134);}
+
+#contact-field {height: 100vh;}
+#right-contact-section {height: 100vh; width: 60vw;display:flex;flex-direction: row; justify-content:flex-end; min-width: max(56vh, 543px);}
+#contact-section-canvas {left: 0; height: 100vh; width: 92%; min-width: max(56vh, 543px); background-color: rgba(255, 0, 210, 0.2); display: flex; flex-direction: column; justify-content: center; padding-top:  70px;}
+
+#contact-greeting{display: flex; flex-direction: column-reverse; height: 40vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold;}
+#contact-me{height: 60vh; width: 90%; margin:10px 0 0 40px; font-size: 23px; color: #252842; overflow: hidden; margin-left: 40px;}
+
+.contact-button {width: 90px; height: 55px; background-color: rgb(149, 149, 218); margin-left: 60px; }
+.contact-subcomponent {width: 500px; height: 100px; margin-left: 60px; font-weight: normal; font-size: 23px; color: #252842; display: flex; align-items: center; padding-right: 40px;}
+#mail-box {width: 430px; background-color: white; margin: 15px 60px; font-weight: 100; font-size: 23px; padding: 5px; border-style: none;}
+.contact-component {margin: 0 0 60px 0;}
+
+#work-cards {height: 300vh; width: 100%; background:none; overflow-y: hidden; position: relative; top: 0vh; transition: all 0.5s ease;}
+.card {height: 100vh; width: 85%; background-color: none; display: flex; flex-direction: column; justify-content: center;align-items: flex-start; padding: 0;}
+.app-description-box {margin: 0; height: 76vh; width: 100%; background-color: none; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+.app {transition: all 0.2s ease;}
+
+#hire-field {margin-left: 60px; height: 55px; background-color: none; width: 320px; display: flex; justify-content: space-between;}
+#wa-number-input {width: 60%; height: 100%; border-style:none; background-color: white; font-family: 'Akshar'; font-size: 23px; font-weight: normal;padding-left: 5px;}
+#hire-button {width: 90px;height: 100%;}
+#wa-number-input:focus {width: 60%; height: 100%; border-style:none; background-color: white;}
+#hire-greeting {height: 100px;}
+#hire-box {padding-bottom: 50px;}
+
+#popup-message-background {position: fixed; background-color: rgba(255, 255, 255, 0.5); width: 100vw; height: 100vh; top: 0; z-index: 11; visibility: hidden; transition: all 0.5s ease;}
+#popup-message{background-color: rgba(235, 171, 223, 1); height: 0px; width: 400px; transition: all 1s ease; display: flex; justify-content: space-around; align-items: center; flex-direction: column; }
+#popup-message-span {font-family: 'Akshar'; font-size: 25px; color:#252842;}
+#popup-OK-button {height: 60px; width: 100px; }
+#mail-greeting {height: 100px;}
+#greeting-span {font-size: 23px; font-weight: normal;}
+#ans-anchor {font-size: 23px; color: #494e7c;}
+
+.purple-button {cursor:pointer; border-style: none; font-family: 'Akshar'; font-size: 23px; font-weight: bold; background-color: rgb(149, 149, 218); color: #252842;  transition: all 0.5s ease;}
+.purple-button:hover {background-color: #d4d6e4; color: white;}
+.center-flex {display: flex; justify-content: center; align-items: center;}
