@@ -388,8 +388,8 @@ function App() {
     </section>
     <section id= 'contact-section' className= 'section'>
       <div id= 'left-contact-section' className= 'left'>
-        <div id= 'contact-greeting'>Finally...</div>
-        <div id= 'contact-me'>If you are impressed with this portfolio, or you are curious about what else I can do, feel free to contact or hire me.</div>
+        <div id= 'contact-greeting' className= 'greeting'>Finally...</div>
+        <div id= 'contact-me' className= 'greeting2'>If you are impressed with this portfolio, or you are curious about what else I can do, feel free to contact or hire me.</div>
       </div>
       <div id= 'right-contact-section' className= 'right'>
         <div id= 'contact-section-canvas'>

@@ -44,8 +44,8 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #social-media {position: absolute; left: 40px; bottom: 40px; width: 150px; height: 35px; display: flex; justify-content: space-between;}
 
 .left {height: 100vh; width: 40vw; min-width: 400px; overflow: hidden; display: flex;flex-direction: column; justify-content: center;}
-#about-greeting, .greeting{display: flex; flex-direction: column-reverse; height: 40vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold;}
-#about-me, .greeting2{height: 60vh; width: 90%; margin:10px 0 0 40px; font-size: 23px; color: #252842; overflow: hidden; margin-left: 40px;}
+#about-greeting, .greeting{display: flex; flex-direction: column-reverse; height: 45.3vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold;}
+#about-me, .greeting2{height: 54.7vh; width: 90%; margin:10px 0 0 40px; font-size: 23px; color: #252842; overflow: hidden; margin-left: 40px;}
 
 .right {right: 0; width: 60vw; min-width: max(56vh, 543px); overflow: hidden; height: 100vh; display: flex; flex-direction: row-reverse;}
 #canvas-field {left: 0; height: 100vh; min-width: max(56vh, 543px); background-color: rgba(0, 255, 0, 0.2); overflow: hidden;}
@@ -78,9 +78,6 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #contact-field {height: 100vh;}
 #right-contact-section {height: 100vh; width: 60vw;display:flex;flex-direction: row; justify-content:flex-end; min-width: max(56vh, 543px);}
 #contact-section-canvas {left: 0; height: 100vh; width: 92%; min-width: max(56vh, 543px); background-color: rgba(255, 0, 210, 0.2); display: flex; flex-direction: column; justify-content: center; padding-top:  70px;}
-
-#contact-greeting{display: flex; flex-direction: column-reverse; height: 40vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold;}
-#contact-me{height: 60vh; width: 90%; margin:10px 0 0 40px; font-size: 23px; color: #252842; overflow: hidden; margin-left: 40px;}
 
 .contact-button {width: 90px; height: 55px; background-color: rgb(149, 149, 218); margin-left: 60px; }
 .contact-subcomponent {width: 500px; height: 100px; margin-left: 60px; font-weight: normal; font-size: 23px; color: #252842; display: flex; align-items: center; padding-right: 40px;}
