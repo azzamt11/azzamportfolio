@@ -1,0 +1,30 @@
+<div id= 'mail-greeting' className= 'contact-subcomponent'><span id= 'greeting-span'>You can send me anonymous message through this box if you want to give a comment or ask some question about me. The answer will be available <a href= 'http://www.example.com' id= 'ans-anchor' target= '_blank'>here</a>.</span></div>
+            <form id= 'message-field'>
+              <textarea id= 'mail-box' className= 'contact-subcomponent' onChange= {(e)=> {}}/>
+              <div id= 'mail-button' className= 'contact-button purple-button center-flex' value= 'Send' onClick ={(e)=> {mailButtonFunction()}}>Send</div>
+            </form>
+
+
+            <div id= 'lower-contact-component'>
+                <div id= 'hire-greeting' className= 'contact-subcomponent'>If you are interrested to hire me. Please enter your whatsapp number and click the button below.</div>
+                <form id= 'hire-field'>
+                  <input id= 'wa-number-input' placeholder= 'whatsapp-number'/>
+                  <div id= 'hire-button' className='purple-button center-flex' type="submit" onClick ={(e)=> {hireButtonFunction()}}>Hire</div>
+                </form>
+              </div>
+
+
+              <div id= 'upper-contact-component'>
+                <div id= 'mail-greeting' className= 'contact-subcomponent'><span id= 'greeting-span'>You can send me anonymous message through this box if you want to give a comment or ask some question about me. The answer will be available <a href= 'http://www.example.com' id= 'ans-anchor' target= '_blank'>here</a>.</span></div>
+                <form id= 'message-field'>
+                  <textarea id= 'mail-box' className= 'contact-subcomponent' onChange= {(e)=> {}}/>
+                  <div id= 'mail-button' className= 'contact-button purple-button center-flex' value= 'Send' onClick ={(e)=> {mailButtonFunction()}}>Send</div>
+                </form>
+              </div>    
+              <div id= 'lower-contact-component'>
+                <div id= 'hire-greeting' className= 'contact-subcomponent'>If you are interrested to hire me. Please enter your whatsapp number and click the button below.</div>
+                <form id= 'hire-field'>
+                  <input id= 'wa-number-input' placeholder= 'whatsapp-number'/>
+                  <div id= 'hire-button' className='purple-button center-flex' type="submit" onClick ={(e)=> {hireButtonFunction()}}>Hire</div>
+                </form>
+              </div>

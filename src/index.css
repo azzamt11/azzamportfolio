@@ -3,7 +3,7 @@ code {
     monospace;
 }
 
-* {text-decoration: none; padding: 0; margin: 0; font-size: 20px; font-family: 'Akshar';}
+* {text-decoration: none; padding: 0; margin: 0; font-size: 20px; font-family: 'Akshar'; transition: all 0.5s ease;}
 body {height: 0; width: 0; overflow-x: hidden;} /* fix*/
 .container {overflow-y: scroll; overflow-x: hidden; width: 100vw; height: 800vh;}  /* fix*/
 
@@ -16,18 +16,18 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 
 #nav-bar {height: 70px; width: 99vw; position: fixed; top: 0; left: 0; display: flex; justify-content: space-between; z-index: 10; overflow: hidden;}
 .nav {display: flex; width: 660px; padding: 0px 0px; color: #727070; font-family: 'Akshar'; position: relative; right: 10px;}
-#side-nav-bar {display: none; justify-content: flex-end; margin-right: 150px;width: 50%; position: fixed; left: 50vw; top: 0; height: 9px; visibility: hidden; background-color: none; z-index: 70; transition: all 0.5s ease;}
-.stick {transition: all 0.5s ease; width: 30px; height: 5px; border-radius: 3px; background-color: #555555; margin: 2px 2px;}
+#side-nav-bar {display: none; justify-content: flex-end; margin-right: 150px;width: 50%; position: fixed; left: 50vw; top: 0; height: 9px; visibility: hidden; background-color: none; z-index: 70;}
+.stick {width: 30px; height: 5px; border-radius: 3px; background-color: #555555; margin: 2px 2px;}
 #snb-button {width: 120px; height: 70px; flex-direction: column; cursor: pointer; visibility: hidden;}
 #snb-button:hover>.stick {background-color: white;}
 
 #side-nav {visibility: hidden; position: fixed; height: 100vh; z-index: 69; background-color: rgba(25, 25, 42, 0.8); padding-top: 70px; display: flex; flex-direction: column; justify-content: space-around; width: 100vw; }
-.side-nav-menu {width: 100%; font-size: 40px;color: white; height: 25vh; cursor: pointer; transition: all 0.5s ease;}
+.side-nav-menu {width: 100%; font-size: 40px;color: white; height: 25vh; cursor: pointer;}
 .side-nav-menu:hover {background-color: #252842;}
 .last-menu {margin-bottom: 70px;}
 
-.menu, #logo {cursor: pointer; display: flex; align-items: center;padding: 0 50px; transition: all 0.5s ease 0s; font-size: 18px; opacity: 1;}
-#home:hover, #about:hover, #works:hover, #contact:hover {color: white !important;}
+.menu, #logo {cursor: pointer; display: flex; align-items: center;padding: 0 50px; font-size: 18px; opacity: 1;}
+#home:hover, #skills:hover, #works:hover, #contact:hover {color: white !important;}
 #logo {color: #555555; font-family: 'Akshar'; font-size: 20px; cursor: pointer; padding: 0; margin: 0; width: 400px;} 
 #logo:hover {color: #f8c37d;}
 
@@ -38,7 +38,7 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #name {display: flex; width: 100px; position: relative; align-items: center ;justify-content: left; width: 200px; font-size: 20px; z-index: 4;}
 #greeting {position: relative; left: 40px; font-size: 25px; font-weight: bold; font-family: 'Akshar'; color: #252842; z-index: 4;}
 #big-name {top: 1vh; height: 50vh; left: 0; display: flex; flex-direction: column-reverse; width: 600px;}
-#big-name-text {transition: all 0.5s ease; position: relative; bottom: 0px; left: 40px;font-family: 'Akshar'; font-weight: bold; color: #252842; font-size: 65px;}
+#big-name-text {position: relative; bottom: 0px; left: 40px;font-family: 'Akshar'; font-weight: bold; color: #252842; font-size: 65px;}
 
 #description {position: relative; top: 0; height: 50vh; width: 500px; background-color: none;}
 #div-job {font-weight: bold; font-family: 'Akshar'; position: relative; left: 40px; height: 40px;}
@@ -47,25 +47,37 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 @keyframes animation1 { 100% {transform: translateY(-370px) translateX(299px) rotate(302.4deg);}}
 @keyframes sjAnimation1 { 3% {opacity: 0; transform: translateY(50px)} 25% {opacity: 0; transform: translateY(-50px)} 28% {opacity: 1; transform: translateY(0px)} 50% {opacity: 1; transform: translateY(0px)} 53% {opacity: 0; transform: translateY(50px)} 75% {opacity: 0; transform: translateY(-50px)} 78% {opacity: 1; transform: translateY(0px)}}  
 @keyframes sjAnimation2 { 3% {opacity: 1; transform: translateY(0px)} 25% {opacity: 1; transform: translateY(0px)} 28% {opacity: 0; transform: translateY(50px)} 50% {opacity:0; transform: translateY(-50px)} 53% {opacity: 1; transform: translateY(0px)} 75% {opacity: 1; transform: translateY(0px)} 78% {opacity: 0; transform: translateY(50px)}}  
-.media {position: relative; height: 100%; width: 35px; background-color: none; z-index: 10; cursor: pointer; transition: all 0.4s ease; border-style: solid; border-width: 1px; border-color: white; border-color: #505896; border-width: 2px;} 
+.media {position: relative; height: 100%; width: 35px; background-color: none; z-index: 10; cursor: pointer; border-style: solid; border-width: 1px; border-color: white; border-color: #505896; border-width: 2px;} 
 .media:hover { background-color:none; border-color: #f8c37d;}
 .insta {background-image: url('../public/insta-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .insta:hover {background-image: url('../public/insta-transparent-f8c37d.png');}
 .github {background-image: url('../public/github-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .youtube:hover {background-image: url('../public/youtube-transparent-f8c37d.png');}
 .youtube {background-image: url('../public/youtube-transparent-505896.png'); background-size: 105%; background-repeat: no-repeat; background-position: center center;} .github:hover {background-image: url('../public/github-transparent-f8c37d.png');}
 #social-media {position: absolute; left: 40px; bottom: 40px; width: 150px; height: 35px; display: flex; justify-content: space-between;}
 
-.left {height: 100vh; width: 40vw; overflow: hidden; display: flex;flex-direction: column; justify-content: center; transition: all 0.5s ease;}
-.greeting1{display: flex; flex-direction: column-reverse; height: 45.3vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold; transition: all 0.5s ease;}
-.greeting2{height: 54.7vh; width: 80%; margin:10px 0 0 40px; font-size: 23px; color: #252842; overflow: hidden; margin-left: 40px; transition: all 0.5s ease;}
+.left {height: 100vh; width: 40vw; overflow: hidden; display: flex;flex-direction: column; justify-content: center;}
+.greeting1{display: flex; flex-direction: column-reverse; height: 45.3vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold;}
+.greeting2{height: 54.7vh; width: 80%; margin:10px 0 0 40px; font-size: 23px; color: #252842; overflow: hidden; margin-left: 40px;}
 
-.right {background-color: none; right: 0; width: 55vw; overflow: hidden; height: 100vh; display: flex; flex-direction: row-reverse; transition: all 0.5s ease; }
-#canvas-field {width: max(60vw, 400px); left: 0; height: 100vh; background-color: rgba(0, 255, 0, 0.2); overflow: hidden;}
+.right {background-color: none; right: 0; width: 55vw; overflow: hidden; height: 100vh; display: flex; flex-direction: row-reverse;}
+#skills-section-canvas {width: max(60vw, 400px); left: 0; height: 100vh; background-color: rgba(0, 255, 0, 0.2); overflow: hidden;}
+#upper-skills-component, #lower-skills-component {height: 50%; display:flex; padding-right: 20px; margin: 0 2vw;}
+.upper-skills-item {width: 33%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
+.lower-skills-item {padding-top: 10vh;width: 33%; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
+.skills-image {width: max(10vw, 100px); height: max(10vw, 100px); background-size: 100%; background-repeat: no-repeat;}
+#skills-text {width: 100%; min-height: 25%; margin: 10px 0; font-size: 23px; font-weight: bold; color: #252842; text-align: center;}
+#lower-skills-component {height: 50%;}
 
-#upper-textfield {position: relative; left: 0; font-weight: bold; height: 45vh; width: 54vw; display: flex; flex-direction: row; align-items: flex-end;justify-content: space-around; margin-right: min(3vw, 15px);}
-.skill-text {width: 18vw; min-width: 135px; display: flex; flex-direction: column ; align-items: center; font-size: 20px; color:#636892;}
-#lower-textfield {position: relative; left: 0; font-weight: bold; height: 40vh; width: 54vw; display: flex; flex-direction: row; align-items: flex-end;justify-content: space-around;margin-right: min(3vw, 15px);}
-.skill-canvas {height: 27vh; width: 17vw; background-color: none; margin: 0 0.5vw; display: flex; justify-content: center; align-items: center;}
-.image {height: 15vh; width: 15vh}
+.skill-persentage {height: max(10vw, 100px); width: max(10vw, 100px); background: radial-gradient(farthest-side at 100% 100%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); display: flex; justify-content: flex-end; align-items: flex-end;}
+.skill-persentage:hover {background-color: rgba(255, 255, 255, 0.8);}
+.skill-persentage:hover>.span-01 {margin: max(3.5vw, 35px);}
+.span-01 {margin: max(0.7vw, 7px); font-size: 25px; font-family: 'Akshar'; font-weight: bold; color: #252842;}
+
+#skill-1 {background-image: url('../public/javascriptLogo.png')}
+#skill-2 {background-image: url('../public/javaLogo.png')}
+#skill-3 {background-image: url('../public/phpLogo.png')}
+#skill-4 {background-image: url('../public/cssLogo.png')}
+#skill-5 {background-image: url('../public/reactLogo.png')}
+#skill-6 {background-image: url('../public/flutterLogo.png');}
 
 #work-field {background-color: none; height: 100vh; width: 100%;display:flex;flex-direction: row; justify-content:flex-end; }
 #work-card {left: 0; height: 100vh; width: 100%; background-color: rgba(0, 162, 255, 0.2); display: flex; flex-direction: row; justify-content:center;}
@@ -75,77 +87,71 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #box {display: flex; width: 150px; flex-direction: column; justify-content: flex-start; align-items:  flex-start; margin: 0;}
 #work-right-subfield {height: 100vh; width: 50%; display: flex; align-items: center; justify-content: space-between; padding: 0;}
 #updown-button {height: 140px; width: 150px; display: flex; flex-direction: column; justify-content: space-between;}
-.updown {height: 60px; width: 60px; border-radius: 30px; opacity: 0.5; transition: all 0.5s ease;}
+.updown {height: 60px; width: 60px; border-radius: 30px; opacity: 0.5;}
 .updown:hover {opacity: 1; cursor: pointer;}
 #up {background-image: url('../public/upButton.png'); background-size: 100%;}
 #down {background-image: url('../public/downButton.png'); background-size: 100%;}
 .app {color: #252842;}
 .app-name {font-size: 25px; font-weight: bold; margin-bottom: 20px;}
-.app-description {font-size: 20px;width: 20vw;}
+.app-description {font-size: 20px;width: 35vw;}
 .app-rate{background-image: url('../public/5Stars.png'); width: 300px; height: 47px; background-size: 50%; background-repeat: no-repeat;}
-.app-link {margin-top: 30px; width: 160px; height: 50px; background-color: rgba(88, 206, 77, 0.5); color: #252842; cursor: pointer; transition: all 0.5s ease;} 
+.app-link {margin-top: 30px; width: 160px; height: 50px; background-color: rgba(88, 206, 77, 0.5); color: #252842; cursor: pointer;}
 .app-link:hover {color: white; background-color: rgb(134, 218, 134);}
 
+#contact-sub-container {display: flex; flex-direction: column; justify-content: center; height: 85vh; margin-bottom: 80px; width: min(350px, 60vw);}
 #contact-field {height: 100vh;}
-#right-contact-section {height: 100vh; display:flex;flex-direction: row; justify-content:flex-start;}
-#contact-section-canvas {left: 0; height: 100vh; width: 100%;; display: flex; flex-direction: column; justify-content: center; padding-top:  70px; background-color: rgba(255, 171, 0, 0.2)}
+#right-contact-section {height: 100vh;}
+#contact-section-canvas {max-width: max(65vw, 450px); padding: 70px 0 400px 5vw; left: 0; height: 100vh; width: 100%; display: flex; flex-direction: row; justify-content: flex-start; background-color: rgba(255, 171, 0, 0.2)}
+#upper-contact-component {width: 500px; margin-bottom: 4vh;}
+#lower-contact-component { width: 500px;}
 
-.contact-button {width: 90px; height: 55px; background-color: rgb(149, 149, 218); margin-left: 60px; }
-.contact-subcomponent {width: 300px; height: 100px; margin-left: 60px; font-weight: normal; font-size: 23px; color: #252842; display: flex; align-items: center; padding-right: 40px;}
-#mail-box {width: 430px; background-color: white; margin: 15px 60px; font-weight: 100; font-size: 23px; padding: 5px; border-style: none;}
-.contact-component {margin: 0 0 60px 0;}
+.contact-button {width: 90px; height: 55px; background-color: rgb(149, 149, 218);}
+.contact-subcomponent {width: 300px; height: 100px; font-weight: normal; font-size: 22px; color: #252842; display: flex; align-items: center; padding-right: 40px;}
+#mail-box {width: 430px; background-color: white; margin: 15px 0; font-weight: 100; font-size: 22px; padding: 5px; border-style: none;}
 
-#work-cards {height: 300vh; width: 100%; background:none; overflow-y: hidden; position: relative; top: 0vh; transition: all 0.5s ease;}
+#work-cards {height: 300vh; width: 100%; background:none; overflow-y: hidden; position: relative; top: 0vh;}
 .card {height: 100vh; width: 85%; background-color: none; display: flex; flex-direction: column; justify-content: center;align-items: flex-start; padding: 0;}
 .app-description-box {margin: 0; height: 76vh; width: 100%; background-color: none; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
-.app {transition: all 0.2s ease;}
 
-#hire-field {margin-left: 60px; height: 55px; background-color: none; width: 320px; display: flex; justify-content: space-between;}
-#wa-number-input {width: 60%; height: 100%; border-style:none; background-color: white; font-family: 'Akshar'; font-size: 23px; font-weight: normal;padding-left: 5px;}
+#hire-field {height: 55px; background-color: none; width: 320px; display: flex; justify-content: space-between;}
+#wa-number-input {width: 60%; height: 100%; border-style:none; background-color: white; font-family: 'Akshar'; font-size: 22px; font-weight: normal;padding-left: 5px;}
 #hire-button {width: 90px;height: 100%;}
 #wa-number-input:focus {width: 60%; height: 100%; border-style:none; background-color: white;}
 #hire-greeting {height: 100px; width: 450px;}
-#hire-box {padding-bottom: 50px;}
 
-#popup-message-background {position: fixed; background-color: rgba(255, 255, 255, 0.5); width: 100vw; height: 100vh; top: 0; z-index: 11; visibility: hidden; transition: all 0.5s ease;}
-#popup-message{background-color: rgba(235, 171, 223, 1); height: 0px; width: 400px; transition: all 1s ease; display: flex; justify-content: space-around; align-items: center; flex-direction: column; }
+#popup-message-background {position: fixed; background-color: rgba(255, 255, 255, 0.5); width: 100vw; height: 100vh; top: 0; z-index: 11; visibility: hidden;}
+#popup-message{background-color: rgba(235, 171, 223, 1); height: 0px; width: 400px; display: flex; justify-content: space-around; align-items: center; flex-direction: column; }
 #popup-message-span {font-family: 'Akshar'; font-size: 25px; color:#252842;}
 #popup-OK-button {height: 60px; width: 100px; }
 #mail-greeting {height: 100px; width: 450px;}
-#greeting-span {font-weight: normal; font-size: 23px;}
-#ans-anchor {font-size: 23px; color: #494e7c;}
+#greeting-span {font-weight: normal; font-size: 22px;}
+#ans-anchor {font-size: 22px; color: #494e7c;}
 
-.purple-button {cursor:pointer; border-style: none; font-family: 'Akshar'; font-size: 23px; font-weight: bold; background-color: rgb(149, 149, 218); color: #252842;  transition: all 0.5s ease;}
+.purple-button {cursor:pointer; border-style: none; font-family: 'Akshar'; font-size: 23px; font-weight: bold; background-color: rgb(149, 149, 218); color: #252842; }
 .purple-button:hover {background-color: #d4d6e4; color: white;}
 .center-flex {display: flex; justify-content: center; align-items: center;}
 .greeting0 {position: absolute; opacity: 1; transform: translateY(-500px);}
 
 @media (max-width: 975px) {
   #snb-button {cursor: pointer; visibility: visible;}
-  #side-nav {visibility: visible; left: 100vw; transition: all 1s ease;}
+  #side-nav {visibility: visible; left: 100vw;}
   #name-section {width: 100vw; background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,0.3), rgba(255,255,255,0));}
   .greeting0 {display: block; font-family: 'Akshar'; position: fixed; font-size: 7vw; top: 0; right: 70vw; color: #252542; width: 600px; transform: rotate(90deg) translateX(400px) translateY(-220px); }
   .greeting1, .greeting2 {display: none;}
-  .left {width: 100px; transition: all 0.5s ease; background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.5), rgba(255,255,255,0));}
+  .left {width: 100px;background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.5), rgba(255,255,255,0));}
   .left:hover {justify-content: flex-start; }
   .menu {opacity: 0;}
   #side-nav-bar {opacity: 1; z-index: 70; visibility: visible; display: flex; justify-content: flex-end; position: fixed;}
 
-  .right {padding: 0; right: 0; width: max(65vw, 450px); overflow: hidden; height: 100vh; display: flex; flex-direction: row-reverse; transition: all 0.5s ease; }
+  .right {padding: 0; right: 0; width: max(65vw, 450px); overflow: hidden; height: 100vh; display: flex; flex-direction: row-reverse;}
   #canvas-field {width: 100%; left: 0; height: 100vh; background-color: rgba(0, 255, 0, 0.2); overflow: hidden; padding: 0;}
 
-  #upper-textfield {height: 45vh; width: 70%; margin: 0;}
-  .skill-text {width: 15vw; font-size: 18px; color:#636892;}
-  #lower-textfield {height: 40vh; width: 70%; margin: 0;}
-  .skill-canvas {height: 27vh; width: 14vw; background-color: none; margin: 0 0.5vw; display: flex; justify-content: center; align-items: center;}
-  .image {height: 90px; width: 90px;}
-  .contact-subcomponent {width: 300px; height: 100px; margin-left: 60px; font-weight: normal; font-size: 20px; color: #252842; }
+  .contact-subcomponent {width: 300px; height: 120px; font-weight: normal; font-size: 20px; color: #252842; }
   #mail-greeting {font-size: 20px;}
   #greeting-span {font-weight: normal; margin-bottom: 20px;}
   #mail-box {width: 280px;}
   #hire-field {width: 280px;}
   #wa-number-input {font-size: 20px;}
-  .contact-component {margin: 0 0 40px 0;}
 
   #hire-button {width: 90px;height: 100%;}
   #hire-greeting {height: 100px; width: 300px;}
@@ -154,5 +160,10 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
   #mail-greeting {height: 100px; width: 300px;}
   #greeting-span {font-size: 20px;}
   #ans-anchor {font-size: 20px;}
+
+  #work-left-subfield {display: none;}
+  #work-right-subfield {width: 100%; margin-left: 5vw;}
+  .app-display {width: 25.04vh; height: 50vh; background-color: white; margin-bottom: 20px; }
+  .app-description-box {width: 35vw; max-width: 4000px; height: 85vh; max-height: 4000px; margin: 70px 0 20px 0;}
 
   }
