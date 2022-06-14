@@ -6,7 +6,10 @@ import emailjs from 'emailjs-com';
 
 
 function App() {
+  //const and vars
+  const [p, setP]= useState(0);
   var msg= 'The message has been sent';
+
   //submit handler
   const hireButtonFunction=  async() => {
     if (document.getElementById('wa-number-input').value!='') {
@@ -43,23 +46,38 @@ function App() {
   //matrices
   const menuMatrix= ['home', 'about', 'works', 'contact'];
   const colorMatrix= ['#555555', '#f8c37d'];
+  const secColorMatrix= ['white', '#f8c37d'];
 
   //menu functions
   const homeFunction= ()=> {
     window.scrollTo({top: 0, behavior: 'smooth'});
-    document.getElementById('home').style.cssText = 'color: #f8c37d';
+    document.getElementById('side-nav').style.cssText = 'left: 100vw';
+    setP(0);
   }
   const aboutFunction= ()=> {
     window.scrollTo({top: window.innerHeight+100, behavior: 'smooth'});
-    document.getElementById('about').style.cssText = 'color: #f8c37d';
+    document.getElementById('side-nav').style.cssText = 'left: 100vw';
+    setP(0);
   }
   const worksFunction= ()=> {
     window.scrollTo({top: 3*window.innerHeight+100, behavior: 'smooth'});
-    document.getElementById('works').style.cssText = 'color: #f8c37d';
+    document.getElementById('side-nav').style.cssText = 'left: 100vw';
+    setP(0);
   }
   const contactFunction= ()=> {
     window.scrollTo({top: 5*window.innerHeight+100, behavior: 'smooth'});
-    document.getElementById('contact').style.cssText = 'color: #f8c37d';
+    document.getElementById('side-nav').style.cssText = 'left: 100vw';
+    setP(0);
+  }
+
+  //side menu function
+  const sideNavFunction= () => {
+    if (p==0) {
+      document.getElementById('side-nav').style.cssText = 'left: 0';
+    } else {
+      document.getElementById('side-nav').style.cssText = 'left: 100vw';
+    }
+    setP(1-p);
   }
 
   //updown button function
@@ -207,6 +225,7 @@ function App() {
   const colorMenu= (matrix) => {
     for(let k=0; k<4; k++) {
       document.getElementById(`${menuMatrix[k]}`).style.cssText = `color: ${colorMatrix[matrix[k]]}`;
+      document.getElementById(`side-${menuMatrix[k]}`).style.cssText = `color: ${secColorMatrix[matrix[k]]}`;
     }
   }
   //use effect
@@ -317,13 +336,20 @@ function App() {
       <section id='home-section'>
         <div id= 'nav-bar'>
           <div id= 'logo'><div id= 'photo'></div><div id= 'name'>Abdullah Azzam</div></div>
-            <div className= 'nav'>
-              <div className= 'menu home' id= 'home' onClick= {homeFunction}>Home</div>
-              <div className= 'menu about' id= 'about' onClick= {aboutFunction}>About</div>
-              <div className= 'menu works' id= 'works'onClick= {worksFunction}>Works</div>
-              <div className= 'menu contact' id= 'contact'onClick= {contactFunction}>Contact</div>
-            </div>
+          <div className= 'nav'>
+            <div className= 'menu home' id= 'home' onClick= {homeFunction}>Home</div>
+            <div className= 'menu about' id= 'about' onClick= {aboutFunction}>Skills</div>
+            <div className= 'menu works' id= 'works'onClick= {worksFunction}>Works</div>
+            <div className= 'menu contact' id= 'contact'onClick= {contactFunction}>Contact</div>
           </div>
+        </div>
+        <div id= 'side-nav-bar'>
+          <div className= 'center-flex' id= 'snb-button' onClick= {sideNavFunction}>
+            <div className ='stick' id= 'stick-1'></div>
+            <div className ='stick' id= 'stick-2'></div>
+            <div className ='stick' id= 'stick-3'></div>
+          </div>
+        </div>
           <div id= 'name-section'>
             <div id= 'name-section-background'></div>
             <div id= 'big-name'>
@@ -343,30 +369,30 @@ function App() {
           </div>
           </div>
         <div id= 'canvas1'></div>
+        <div id= 'side-nav'>
+          <div className= 'side-nav-menu center-flex' id= 'side-home' onClick= {homeFunction}>Home</div>
+          <div className= 'side-nav-menu center-flex' id= 'side-about'  onClick= {aboutFunction}>Skills</div>
+          <div className= 'side-nav-menu center-flex' id= 'side-works'  onClick= {worksFunction}>Works</div>
+          <div className= 'side-nav-menu center-flex last-menu' id= 'side-contact'  onClick= {contactFunction}>Contact</div>
+        </div>
     </section>
     <section id= 'about-section' className= 'section'>
-      <div id= 'left-about-section' className= 'left'>
-        <div id= 'about-greeting'>Hello Everyone...</div>
-        <div id= 'about-me'>I am Abdullah Azzam, I am a self-taught web and android developer, Here are some of my programming skills, including some languages and frameworks.</div>
+      <div className= 'left'>
+        <span className= 'greeting0'>Skills</span>
+        <div id= 'about-greeting' className= 'greeting1'>Hello Everyone...</div>
+        <div id= 'about-me' className= 'greeting2'>I am Abdullah Azzam, I am a self-taught web and android developer, Here are some of my programming skills, including some languages and frameworks.</div>
+        <div id= 'about-canvas'></div>
       </div>
       <div id= 'right-about-section' className= 'right'>
         <div id= 'canvas-field'>
-          <div id= 'upper-textfield'>
-            <div className= 'skill-text text1'><div className= 'skill-canvas'id='canvas01'><img className= 'image'src= 'javascriptLogo.png'/></div><span className= 'skill-text'>JavaScript: 80%</span></div>
-            <div className= 'skill-text text2'><div className= 'skill-canvas'id='canvas02'><img className= 'image'src= 'javaLogo.png'/></div><span className= 'skill-text'>Java: 75%</span></div>
-            <div className= 'skill-text text3'><div className= 'skill-canvas'id='canvas03'><img className= 'image'src= 'cssLogo.png'/></div><span className= 'skill-text'>CSS: 80%</span></div>
-        </div>
-        <div id= 'lower-textfield'>
-            <div className= 'skill-text text4'><div className= 'skill-canvas'id='canvas04'><img className= 'image'src= 'reactLogo.png'/></div><span className= 'skill-text'>ReactJS: 80%</span></div>
-            <div className= 'skill-text text5'><div className= 'skill-canvas'id='canvas05'><img className= 'image'src= 'flutterLogo.png'/></div><span className= 'skill-text'>Flutter: 75%</span></div>
-            <div className= 'skill-text text6'><div className= 'skill-canvas'id='canvas06'><img className= 'image'src= 'laravelLogo.jpg'/></div><span className= 'skill-text'>Laravel: 60%</span></div>
-        </div>
+          
         </div>
       </div>
     </section> 
     <section id= 'work-section'className= 'section'>
       <div id= 'left-work-section' className= 'left'>
-        <div className= 'greeting'>Furthermore...</div>
+        <div className= 'greeting0'>Works</div>
+        <div className= 'greeting1'>Furthermore...</div>
         <div className= 'greeting2'>These are some of my works, including android/iOs apps and web apps. Please take a look.</div>
       </div>
       <div id= 'right-work-section' className='right'>
@@ -388,7 +414,8 @@ function App() {
     </section>
     <section id= 'contact-section' className= 'section'>
       <div id= 'left-contact-section' className= 'left'>
-        <div id= 'contact-greeting' className= 'greeting'>Finally...</div>
+      <div className= 'greeting0'>Contact</div>
+        <div id= 'contact-greeting' className= 'greeting1'>Finally...</div>
         <div id= 'contact-me' className= 'greeting2'>If you are impressed with this portfolio, or you are curious about what else I can do, feel free to contact or hire me.</div>
       </div>
       <div id= 'right-contact-section' className= 'right'>
