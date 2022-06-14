@@ -63,18 +63,18 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #upper-skills-component, #lower-skills-component {height: 50%; display:flex; padding-right: 20px; margin: 0 2vw;}
 .upper-skills-item {width: 33%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
 .lower-skills-item {padding-top: 10vh;width: 33%; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
-.skills-image {width: max(10vw, 100px); height: max(10vw, 100px); background-size: 100%; background-repeat: no-repeat;}
-#skills-text {width: 100%; min-height: 25%; margin: 10px 0; font-size: 23px; font-weight: bold; color: #252842; text-align: center;}
+.skills-image {width: max(10vw, 100px); height: max(10vw, 100px); background-size: 100%; background-repeat: no-repeat; display: flex; justify-content: flex-end; align-items: flex-end;}
+.skills-text {width: 100%; min-height: 25%; margin: 10px 0; font-size: 23px; font-weight: bold; color: #252842; text-align: center;}
 #lower-skills-component {height: 50%;}
 
-.skill-persentage {height: max(10vw, 100px); width: max(10vw, 100px); background: radial-gradient(farthest-side at 100% 100%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); display: flex; justify-content: flex-end; align-items: flex-end;}
-.skill-persentage:hover {background-color: rgba(255, 255, 255, 0.8);}
+.skill-persentage {height: max(5vw, 50px); width: max(5vw, 50px); background: rgba(255, 255, 255, 0.7); display: flex; justify-content: flex-end; align-items: flex-end; border-radius: max(5vw, 50px) 0 0 0;}
+.skills-image:hover>.skill-persentage {background-color: rgba(255, 255, 255, 0.7); height: max(10vw, 100px); width: max(10vw, 100px); border-radius: 0;}
 .skill-persentage:hover>.span-01 {margin: max(3.5vw, 35px);}
 .span-01 {margin: max(0.7vw, 7px); font-size: 25px; font-family: 'Akshar'; font-weight: bold; color: #252842;}
 
 #skill-1 {background-image: url('../public/javascriptLogo.png')}
 #skill-2 {background-image: url('../public/javaLogo.png')}
-#skill-3 {background-image: url('../public/phpLogo.png')}
+#skill-3 {background-image: url('../public/dartLogo.png')}
 #skill-4 {background-image: url('../public/cssLogo.png')}
 #skill-5 {background-image: url('../public/reactLogo.png')}
 #skill-6 {background-image: url('../public/flutterLogo.png');}
