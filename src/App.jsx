@@ -253,26 +253,6 @@ function App() {
       }
     });
 
-    //counter function          ...(for future use)
-    function counter(k, id, skill) {
-      var i = 0;
-      while ( i < k ) {
-          setInterval(document.getElementById(`${id}`).innerHTML= `${skill}: ${i}%`, 500);
-          i++; // Increment i
-          console.log(`${id}+ ${skill}`);
-      }
-    }
-    
-    //reverse counter function    ...(for future use)
-    function reverseCounter(k, id, skill) {
-      var i = k;
-      while ( i > 0 ) {
-          setInterval(document.getElementById(`${id}`).innerHTML= `${skill}: ${i}%`, 500);
-          i--; // Increment i
-          console.log(`${id}+ ${skill}`);
-      }
-    }
-
     //scrolling function
     function getRidNameSection() {
       document.getElementById('name-section').style.cssText = 'left: -575px; opacity: 0;';
