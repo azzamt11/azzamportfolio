@@ -72,11 +72,11 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 .skill-persentage:hover>.span-01 {margin: max(3.5vw, 35px);}
 .span-01 {margin: max(0.7vw, 7px); font-size: 25px; font-family: 'Akshar'; font-weight: bold; color: #252842;}
 
-#skill-1 {background-image: url('../public/javascriptLogo.png')}
-#skill-2 {background-image: url('../public/dartLogo.png')}
+#skill-1 {background-image: url('../public/dartLogo.png')}
+#skill-2 {background-image: url('../public/javascriptLogo.png')}
 #skill-3 {background-image: url('../public/phpLogo.png')}
-#skill-4 {background-image: url('../public/reactLogo.png')}
-#skill-5 {background-image: url('../public/flutterLogo.png')}
+#skill-4 {background-image: url('../public/flutterLogo.png')}
+#skill-5 {background-image: url('../public/reactLogo.png')}
 #skill-6 {background-image: url('../public/laravelLogo.jpg');}
 
 #work-field {background-color: none; height: 100vh; width: 100%;display:flex;flex-direction: row; justify-content:flex-end; }

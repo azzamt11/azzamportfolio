@@ -366,13 +366,13 @@ function App() {
       <div id= 'right-skills-section' className= 'right'>
         <div id= 'skills-section-canvas'>
           <div id= 'upper-skills-component'>
-            <div className= 'upper-skills-item'><div className= 'skills-image' id= 'skill-1'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>JavaScript</div></div>
-            <div className= 'upper-skills-item'><div className= 'skills-image' id= 'skill-2'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>Dart</div></div>
+            <div className= 'upper-skills-item'><div className= 'skills-image' id= 'skill-1'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>Dart</div></div>
+            <div className= 'upper-skills-item'><div className= 'skills-image' id= 'skill-2'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>JavaScript</div></div>
             <div className= 'upper-skills-item'><div className= 'skills-image' id= 'skill-3'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>PHP</div></div>
           </div>
           <div id= 'lower-skills-component'>
-            <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-4'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>React</div></div>
-            <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-5'><div className= 'skill-persentage'><span className= 'span-01'>80%</span></div></div><div className= 'skills-text'>Flutter</div></div>
+            <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-4'><div className= 'skill-persentage'><span className= 'span-01'>80%</span></div></div><div className= 'skills-text'>Flutter</div></div>
+            <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-5'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>React</div></div>
             <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-6'><div className= 'skill-persentage'><span className= 'span-01'>80%</span></div></div><div className= 'skills-text'>Laravel</div></div>
           </div>
         </div>
@@ -411,7 +411,7 @@ function App() {
         <div id= 'contact-section-canvas'>
           <div id= 'contact-sub-container'>
             <div id= 'upper-contact-component'>
-              <div id= 'mail-greeting' className= 'contact-subcomponent'><span id= 'greeting-span'>You can send me anonymous message through this box if you want to give a comment or ask some question skills me. The answer will be available <a href= 'http://www.example.com' id= 'ans-anchor' target= '_blank'>here</a>.</span></div>
+              <div id= 'mail-greeting' className= 'contact-subcomponent'><span id= 'greeting-span'>You can send me anonymous message through this box if you want to give a comment or ask some question about me. The answer will be available <a href= 'http://www.example.com' id= 'ans-anchor' target= '_blank'>here</a>.</span></div>
                 <form id= 'message-field'>
                   <textarea id= 'mail-box' className= 'contact-subcomponent' onChange= {(e)=> {}}/>
                   <div id= 'mail-button' className= 'contact-button purple-button center-flex' value= 'Send' onClick ={(e)=> {mailButtonFunction()}}>Send</div>
