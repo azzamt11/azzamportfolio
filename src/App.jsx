@@ -129,7 +129,7 @@ function App() {
   const material5 = new THREE.MeshBasicMaterial( { color: 0xffaaff } );
 
   //textures
-  const urlsMatrix= ['javascriptLogo.png', 'cssLogo.png', 'javaLogo.png', 'dartLogo.png', 'flutterLogo.png', 'laravelLogo.jpg', 'reactLogo.png', 'phpLogo.png'];
+  const urlsMatrix= ['javascriptLogo.png', 'dartLogo.png', 'phpLogo.png', 'javaLogo.png', 'flutterLogo.png', 'laravelLogo.jpg', 'reactLogo.png', 'phpLogo.png'];
   const loader = new THREE.TextureLoader();
   const makeTexture= (x) => {
     var urls = [];
@@ -338,8 +338,8 @@ function App() {
             </div>
             <div id= 'description'>
             <div id= 'div-job'>
-              <span id= 'span-job1'>Web Fullstack Developer</span>
-              <span id= 'span-job2'>Android Fullstack Developer</span>
+              <span id= 'span-job1'>Android Fullstack Developer</span>
+              <span id= 'span-job2'>Web Backend Developer</span>
             </div>
             <div id= 'social-media'>
               <a href= 'https://instagram.com/azzamv12' target="_blank"><div className= 'insta media' id= 'insta'></div></a>
@@ -371,8 +371,8 @@ function App() {
             <div className= 'upper-skills-item'><div className= 'skills-image' id= 'skill-3'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>PHP</div></div>
           </div>
           <div id= 'lower-skills-component'>
-            <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-4'><div className= 'skill-persentage'><span className= 'span-01'>80%</span></div></div><div className= 'skills-text'>Flutter</div></div>
-            <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-5'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>React</div></div>
+            <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-4'><div className= 'skill-persentage'><span className= 'span-01'>70%</span></div></div><div className= 'skills-text'>Flutter</div></div>
+            <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-5'><div className= 'skill-persentage'><span className= 'span-01'>80%</span></div></div><div className= 'skills-text'>React-Native</div></div>
             <div className= 'lower-skills-item'><div className= 'skills-image' id= 'skill-6'><div className= 'skill-persentage'><span className= 'span-01'>80%</span></div></div><div className= 'skills-text'>Laravel</div></div>
           </div>
         </div>
