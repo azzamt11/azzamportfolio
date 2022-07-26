@@ -344,7 +344,7 @@ function App() {
             <div id= 'social-media'>
               <a href= 'https://instagram.com/azzamv12' target="_blank"><div className= 'insta media' id= 'insta'></div></a>
               <a href= 'https://github.com/azzamt11' target="_blank"><div className= 'github media' id= 'github'></div></a>
-              <a href= 'https://www.youtube.com/channel/UCrTMNDcy6ovSIvMxzio98mg' target="_blank"><div className= 'youtube media' id= 'youtube'></div></a>
+              <a href= 'https://www.linkedin.com/in/abdullah-azzam-8b997b23a/' target="_blank"><div className= 'linkedIn media' id= 'linkedIn'></div></a>
             </div>
           </div>
           </div>
