@@ -50,9 +50,8 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 .media {position: relative; height: 100%; width: 35px; background-color: none; z-index: 10; cursor: pointer; border-style: solid; border-width: 1px; border-color: white; border-color: #505896; border-width: 2px;} 
 .media:hover { background-color:none; border-color: #f8c37d;}
 .insta {background-image: url('../public/insta-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .insta:hover {background-image: url('../public/insta-transparent-f8c37d.png');}
-.github {background-image: url('../public/github-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .youtube:hover {background-image: url('../public/youtube-transparent-f8c37d.png');}
-.youtube {background-image: url('../public/youtube-transparent-505896.png'); background-size: 105%; background-repeat: no-repeat; background-position: center center;} .github:hover {background-image: url('../public/github-transparent-f8c37d.png');}
-#social-media {position: absolute; left: 40px; bottom: 40px; width: 150px; height: 35px; display: flex; justify-content: space-between;}
+.github {background-image: url('../public/github-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .linkedIn:hover {background-image: url('../public/linkedInLogo_f8c37d.png');}
+.linkedIn {background-image: url('../public/linkedInLogo_505896.png'); background-size: 105%; background-repeat: no-repeat; background-position: center center;} .github:hover {background-image: url('../public/github-transparent-f8c37d.png');}
 
 .left {height: 100vh; width: 40vw; overflow: hidden; display: flex;flex-direction: column; justify-content: center;}
 .greeting1{display: flex; flex-direction: column-reverse; height: 45.3vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold;}
@@ -80,7 +79,7 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #skill-6 {background-image: url('../public/laravelLogo.jpg');}
 
 #work-field {background-color: none; height: 100vh; width: 100%;display:flex;flex-direction: row; justify-content:flex-end; }
-#work-card {left: 0; height: 100vh; width: 100%; background-color: rgba(0, 162, 255, 0.2); display: flex; flex-direction: row; justify-content:center;}
+#work-card {left: 0; height: 100vh; width: 100%; background-color: rgba(0, 162, 255, 0.2); display: flex; flex-direction: row; justify-content:center; align-items: center; font-size: 25px}
 #work-left-subfield {height: 100vh; width: 50%;}
 #display {background-color: white; width: 37.04vh; }
 .box {height: 76vh; max-width: min(25vw, 37vh); max-height: min(76vh, 50vw); display: flex; align-items: center; justify-content: center; margin: 0 20px;}
