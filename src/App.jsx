@@ -382,12 +382,12 @@ function App() {
       <div id= 'left-work-section' className= 'left'>
         <div className= 'greeting0'>Works</div>
         <div className= 'greeting1'>Furthermore...</div>
-        <div className= 'greeting2'>Since I am still a newbee, The only work I can show is this portfolio website.</div>
+        <div className= 'greeting2'>Since I am still a newbie, The only work I can show is this portfolio website.</div>
       </div>
       <div id= 'right-work-section' className='right'>
         <div id= 'work-field'>
           <div id= 'work-card'>
-            Since I am still a newbee, the only work I can show is this portfolio website.
+            Since I am still a newbie, the only work I can show is this portfolio website.
           </div>
         </div>
       </div>
