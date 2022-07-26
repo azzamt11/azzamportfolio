@@ -47,7 +47,7 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 @keyframes animation1 { 100% {transform: translateY(-370px) translateX(299px) rotate(302.4deg);}}
 @keyframes sjAnimation1 { 3% {opacity: 0; transform: translateY(50px)} 25% {opacity: 0; transform: translateY(-50px)} 28% {opacity: 1; transform: translateY(0px)} 50% {opacity: 1; transform: translateY(0px)} 53% {opacity: 0; transform: translateY(50px)} 75% {opacity: 0; transform: translateY(-50px)} 78% {opacity: 1; transform: translateY(0px)}}  
 @keyframes sjAnimation2 { 3% {opacity: 1; transform: translateY(0px)} 25% {opacity: 1; transform: translateY(0px)} 28% {opacity: 0; transform: translateY(50px)} 50% {opacity:0; transform: translateY(-50px)} 53% {opacity: 1; transform: translateY(0px)} 75% {opacity: 1; transform: translateY(0px)} 78% {opacity: 0; transform: translateY(50px)}}  
-#social-media {position: relative; left: 40px; height: 35px; width: 135px; display: flex;flex-direction: row; justify-content: space-between; top: 30vh;}
+#social-media {position: relative; left: 40px; height: 35px; width: 125px; display: flex;flex-direction: row; justify-content: space-between; top: 30vh;}
 .media {position: relative; height: 100%; width: 35px; background-color: none; z-index: 10; cursor: pointer; border-style: solid; border-width: 1px; border-color: white; border-color: #505896; border-width: 2px;} 
 .media:hover { background-color:none; border-color: #f8c37d;}
 .insta {background-image: url('../public/insta-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .insta:hover {background-image: url('../public/insta-transparent-f8c37d.png');}
@@ -80,7 +80,7 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #skill-6 {background-image: url('../public/laravelLogo.jpg');}
 
 #work-field {background-color: none; height: 100vh; width: 100%;display:flex;flex-direction: row; justify-content:flex-end; }
-#work-card {left: 0; height: 100vh; width: 100%; padding: 0px 40px 0px 40px; background-color: rgba(0, 162, 255, 0.2); display: flex; flex-direction: row; justify-content:center; align-items: center; font-size: 25px}
+#work-card {left: 0; height: 100vh; width: 100%; padding: 0px 70px 0px 70px; background-color: rgba(0, 162, 255, 0.2); display: flex; flex-direction: row; justify-content:center; align-items: center; font-size: 25px}
 #work-left-subfield {height: 100vh; width: 50%;}
 #display {background-color: white; width: 37.04vh; }
 .box {height: 76vh; max-width: min(25vw, 37vh); max-height: min(76vh, 50vw); display: flex; align-items: center; justify-content: center; margin: 0 20px;}
