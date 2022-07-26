@@ -382,21 +382,12 @@ function App() {
       <div id= 'left-work-section' className= 'left'>
         <div className= 'greeting0'>Works</div>
         <div className= 'greeting1'>Furthermore...</div>
-        <div className= 'greeting2'>These are some of my works, including android/iOs apps and web apps. Please take a look.</div>
+        <div className= 'greeting2'>Since I am still a newbee, The only work I can show is this portfolio website.</div>
       </div>
       <div id= 'right-work-section' className='right'>
         <div id= 'work-field'>
           <div id= 'work-card'>
-            <div id= 'work-left-subfield' className= 'center-flex'>
-              <div id= 'display' className='box'>This is display</div>
-            </div>
-            <div id= 'work-right-subfield'>
-              <WorkCards/>
-              <div id= 'updown-button'>
-                <div className= 'updown' id= 'up' onClick= {buttonUpFunction}></div>
-                <div className= 'updown' id= 'down' onClick= {buttonDownFunction}></div>
-              </div>
-            </div>
+            Since I am still a newbee, the only work I can show is this portfolio website.
           </div>
         </div>
       </div>
