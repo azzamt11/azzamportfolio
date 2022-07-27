@@ -387,7 +387,7 @@ function App() {
       <div id= 'right-work-section' className='right'>
         <div id= 'work-field'>
           <div id= 'work-card'>
-            <div id= 'work-disclaimer'>Actually I was in progress of creating a flutter app to be shown in this portfolio, but my laptop is broken for some reason at the middle of the process. <a href='http://azzamsblogdomain.42web.io/fictuneprogress/' target="_blank">Here</a> is the captures of the latest progress of my app development.</div>
+            <div className= 'greeting2'>Actually I was in progress of creating a flutter app to be shown in this portfolio, but my laptop is broken for some reason at the middle of the process. <a href='http://azzamsblogdomain.42web.io/fictuneprogress/' target="_blank">Here</a> is the captures of the latest progress of my app development.</div>
           </div>
         </div>
       </div>
