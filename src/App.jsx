@@ -382,12 +382,18 @@ function App() {
       <div id= 'left-work-section' className= 'left'>
         <div className= 'greeting0'>Works</div>
         <div className= 'greeting1'>Furthermore...</div>
-        <div className= 'greeting2'>Actually I was in progress of creating a flutter app to be shown in this portfolio, but my laptop is broken for some reason at the middle of the process. <a href='http://azzamsblogdomain.42web.io/fictuneprogress/' target="_blank">Here</a> is the captures of the latest progress of my app development.</div>
+        <div className= 'greeting2'>These are some of my works, including android/iOs apps and web apps. Please take a look.</div>
       </div>
       <div id= 'right-work-section' className='right'>
         <div id= 'work-field'>
           <div id= 'work-card'>
-            <div>Actually I was in progress of creating a flutter app to be shown in this portfolio, but my laptop is broken for some reason at the middle of the process. <a href='http://azzamsblogdomain.42web.io/fictuneprogress/' target="_blank">Here</a> is the captures of the latest progress of my app development.</div>
+            <div id= 'work-subfield'>
+              <WorkCards/>
+              <div id= 'updown-button'>
+                <div className= 'updown' id= 'up' onClick= {buttonUpFunction}></div>
+                <div className= 'updown' id= 'down' onClick= {buttonDownFunction}></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
