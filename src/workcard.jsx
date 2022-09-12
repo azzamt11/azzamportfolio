@@ -20,7 +20,7 @@ function WorkCards() {
                     <div className= 'app-name app' id= 'app-name-2'>Fictune Mobile App</div>
                     <div className= 'app-description app' id= 'app-description-2'>Mobile Novel Application</div>
                     <div className= 'app-description app'>Role: Fullstack Developer,UI/UX Designer, Owner</div>
-                    <a href= 'http://example.com/' target="_blank"><div className= 'app-link app  center-flex' id= 'app-link-2'>In Progress</div></a>
+                    <a href= 'http://azzamsblogdomain.42web.io/fictuneprogress' target="_blank"><div className= 'app-link app  center-flex' id= 'app-link-2'>View Progress</div></a>
                 </div>
             </div>
         </div>
