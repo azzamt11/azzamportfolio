@@ -81,7 +81,7 @@ function App() {
   }
 
   //updown button function
-  var cardPositionParam= 0;
+  var cardPositionParam= 1;
   const buttonDownFunction= () => {
     if (cardPositionParam>0 && cardPositionParam<2) {
       cardPositionParam--;
