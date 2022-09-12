@@ -108,7 +108,7 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 .contact-subcomponent {width: 300px; height: 100px; font-weight: normal; font-size: 22px; color: #252842; display: flex; align-items: center; padding-right: 40px;}
 #mail-box {width: 430px; background-color: white; margin: 15px 0; font-weight: 100; font-size: 22px; padding: 5px; border-style: none;}
 
-#work-cards {height: 300vh; width: 100%; background:none; overflow-y: hidden; position: relative; top: 0vh;}
+#work-cards {height: 300vh; width: 100%; background:none; overflow-y: hidden; position: relative; top: 100vh;}
 .card {height: 100vh; width: 85%; background-color: none; display: flex; flex-direction: column; justify-content: center;align-items: flex-start; padding: 0;}
 .app-description-box {margin: 0; height: 76vh; width: 100%; background-color: none; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
 
