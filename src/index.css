@@ -47,12 +47,12 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 @keyframes animation1 { 100% {transform: translateY(-370px) translateX(299px) rotate(302.4deg);}}
 @keyframes sjAnimation1 { 3% {opacity: 0; transform: translateY(50px)} 25% {opacity: 0; transform: translateY(-50px)} 28% {opacity: 1; transform: translateY(0px)} 50% {opacity: 1; transform: translateY(0px)} 53% {opacity: 0; transform: translateY(50px)} 75% {opacity: 0; transform: translateY(-50px)} 78% {opacity: 1; transform: translateY(0px)}}  
 @keyframes sjAnimation2 { 3% {opacity: 1; transform: translateY(0px)} 25% {opacity: 1; transform: translateY(0px)} 28% {opacity: 0; transform: translateY(50px)} 50% {opacity:0; transform: translateY(-50px)} 53% {opacity: 1; transform: translateY(0px)} 75% {opacity: 1; transform: translateY(0px)} 78% {opacity: 0; transform: translateY(50px)}}  
-#social-media {position: relative; left: 40px; height: 35px; width: 125px; display: flex;flex-direction: row; justify-content: space-between; top: 30vh;}
 .media {position: relative; height: 100%; width: 35px; background-color: none; z-index: 10; cursor: pointer; border-style: solid; border-width: 1px; border-color: white; border-color: #505896; border-width: 2px;} 
 .media:hover { background-color:none; border-color: #f8c37d;}
 .insta {background-image: url('../public/insta-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .insta:hover {background-image: url('../public/insta-transparent-f8c37d.png');}
-.github {background-image: url('../public/github-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .linkedIn:hover {background-image: url('../public/linkedInLogo_f8c37d.png');}
-.linkedIn {background-image: url('../public/linkedInLogo_505896.png'); background-size: 105%; background-repeat: no-repeat; background-position: center center;} .github:hover {background-image: url('../public/github-transparent-f8c37d.png');}
+.github {background-image: url('../public/github-transparent-505896.png'); background-size: 85%; background-repeat: no-repeat; background-position: center center;} .youtube:hover {background-image: url('../public/youtube-transparent-f8c37d.png');}
+.youtube {background-image: url('../public/youtube-transparent-505896.png'); background-size: 105%; background-repeat: no-repeat; background-position: center center;} .github:hover {background-image: url('../public/github-transparent-f8c37d.png');}
+#social-media {position: absolute; left: 40px; bottom: 40px; width: 150px; height: 35px; display: flex; justify-content: space-between;}
 
 .left {height: 100vh; width: 40vw; overflow: hidden; display: flex;flex-direction: column; justify-content: center;}
 .greeting1{display: flex; flex-direction: column-reverse; height: 45.3vh; width: 100%; min-width: 200px; margin: 0 0 10px 40px; font-size: 30px; color: #252842; font-weight: bold;}
@@ -80,12 +80,11 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #skill-6 {background-image: url('../public/laravelLogo.jpg');}
 
 #work-field {background-color: none; height: 100vh; width: 100%;display:flex;flex-direction: row; justify-content:flex-end; }
-#work-card {left: 0; height: 100vh; width: 100%; padding: 0px 70px 0px 70px; background-color: rgba(0, 162, 255, 0.2); display: flex; flex-direction: row; justify-content:center; align-items: center; font-size: 25px}
-#work-left-subfield {height: 100vh; width: 50%;}
+#work-card {left: 0; height: 100vh; width: 100%; background-color: rgba(0, 162, 255, 0.2); display: flex; flex-direction: row; justify-content:center;}
 #display {background-color: white; width: 37.04vh; }
 .box {height: 76vh; max-width: min(25vw, 37vh); max-height: min(76vh, 50vw); display: flex; align-items: center; justify-content: center; margin: 0 20px;}
 #box {display: flex; width: 150px; flex-direction: column; justify-content: flex-start; align-items:  flex-start; margin: 0;}
-#work-right-subfield {height: 100vh; width: 50%; display: flex; align-items: center; justify-content: space-between; padding: 0;}
+#work-subfield {margin-left: 15px; height: 100vh; width:90%; display: flex; align-items: center; justify-content: space-between; padding: 0;}
 #updown-button {height: 140px; width: 150px; display: flex; flex-direction: column; justify-content: space-between;}
 .updown {height: 60px; width: 60px; border-radius: 30px; opacity: 0.5;}
 .updown:hover {opacity: 1; cursor: pointer;}
@@ -95,8 +94,8 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 .app-name {font-size: 25px; font-weight: bold; margin-bottom: 20px;}
 .app-description {font-size: 20px;width: 35vw;}
 .app-rate{background-image: url('../public/5Stars.png'); width: 300px; height: 47px; background-size: 50%; background-repeat: no-repeat;}
-.app-link {margin-top: 30px; width: 160px; height: 50px; background-color: rgba(88, 206, 77, 0.5); color: #252842; cursor: pointer;}
-.app-link:hover {color: white; background-color: rgb(134, 218, 134);}
+#app-link-1 {margin-top: 30px; width: 160px; height: min(25vw, 50vh); min-height: 100px; width: min(40vw, 80vh); min-width: 150px; background-image: url('../public/fictuneGiv.gif'); background-size: 100%; background-repeat: no-repeat; color: #252842; cursor: pointer;}
+#app-link-2 {margin-top: 30px; width: 160px; height: min(25vw, 50vh); min-height: 100px; width: min(40vw, 80vh); min-width: 150px; background-color: white; color: #252842; cursor: pointer;}
 
 #contact-sub-container {display: flex; flex-direction: column; justify-content: center; height: 85vh; margin-bottom: 80px; width: min(350px, 60vw);}
 #contact-field {height: 100vh;}
@@ -165,7 +164,6 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 
   #work-left-subfield {display: none;}
   #work-right-subfield {width: 100%; margin-left: 5vw;}
-  .app-display {width: 25.04vh; height: 50vh; background-color: white; margin-bottom: 20px; }
   .app-description-box {width: 35vw; max-width: 4000px; height: 85vh; max-height: 4000px; margin: 70px 0 20px 0;}
 
   }
