@@ -91,11 +91,12 @@ section {height: 100vh; width: 100vw; padding: 0px 0px; margin: 0px 0px; overflo
 #up {background-image: url('../public/upButton.png'); background-size: 100%;}
 #down {background-image: url('../public/downButton.png'); background-size: 100%;}
 .app {color: #252842;}
-.app-name {font-size: 25px; font-weight: bold; margin-bottom: 20px;}
+.app-name {font-size: 25px; font-weight: bold;}
 .app-description {font-size: 20px;width: 35vw;}
 .app-rate{background-image: url('../public/5Stars.png'); width: 300px; height: 47px; background-size: 50%; background-repeat: no-repeat;}
-#app-link-1 {margin-top: 30px; width: 160px; height: min(25vw, 50vh); min-height: 100px; width: min(40vw, 80vh); min-width: 150px; background-image: url('../public/fictuneGiv.gif'); background-size: 100%; background-repeat: no-repeat; color: #252842; cursor: pointer;}
-#app-link-2 {margin-top: 30px; width: 160px; height: min(25vw, 50vh); min-height: 100px; width: min(40vw, 80vh); min-width: 150px; background-color: white; color: #252842; cursor: pointer;}
+#app-link-1 {width: 160px; height: min(25vw, 50vh); min-height: 100px; width: min(40vw, 80vh); min-width: 150px; background-image: url('../public/quantumBook.png'); background-size: 100%; background-repeat: no-repeat; color: #252842; cursor: pointer;}
+#app-link-2 {width: 160px; height: min(25vw, 50vh); min-height: 100px; width: min(40vw, 80vh); min-width: 150px; background-image: url('../public/azzamtennisgame.png'); background-size: 100%;color: #252842; cursor: pointer;}
+#app-link-3 {width: 160px; height: min(25vw, 50vh); min-height: 100px; width: min(40vw, 80vh); min-width: 150px; background-image: url('../public/tl.png'); background-size: 100%;color: #252842; cursor: pointer;}
 
 #contact-sub-container {display: flex; flex-direction: column; justify-content: center; height: 85vh; margin-bottom: 80px; width: min(350px, 60vw);}
 #contact-field {height: 100vh;}
